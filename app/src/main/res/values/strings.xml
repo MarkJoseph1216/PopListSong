@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopSongsList</string>
+    <string name="pop_songs">20 Pop Songs</string>
+    <string name="play">Play</string>
+</resources>

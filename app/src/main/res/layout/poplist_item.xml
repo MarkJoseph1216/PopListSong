@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/variable_bold"
+            android:id="@+id/txtArtistName"
+            android:gravity="center|start"
+            android:textSize="18sp"
+            android:layout_margin="5sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/variable_bold"
+            android:id="@+id/txtSongTitle"
+            android:gravity="center|start"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/variable_light"
+            android:id="@+id/txtGenre"
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:textSize="14sp"
+            android:layout_margin="5sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_margin="5sp"
+        android:scaleType="centerCrop"/>
+
+    <SeekBar
+        android:id="@+id/songDuration"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/playicon"
+            android:textStyle="bold"
+            android:fontFamily="@font/variable_bold"
+            android:id="@+id/btnPlayPreview"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_pause_circle_filled_black_24dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/variable_bold"
+            android:id="@+id/btnPausePreview"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/txtFooter"
+        android:layout_marginTop="15dp"
+        android:text="Created by: Mark Joseph"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/variable_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
